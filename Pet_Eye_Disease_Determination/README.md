@@ -17,59 +17,59 @@ url: https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDa
  모델은 Keras의 CNN을 사용했다. 데이터셋은 2차원 컬러 이미지로서 단순 이진분류(병이 있는지 없는지)를 판단하기에는 가장 직관적이고 높은 정확도를 보일 것으로 판단했기 때문이다.
 
 ## 5. Hyperparameter Tuning
- ### version 1
-   image resolution: 64x64
-   filter: 32
-   kernel size: 3, 3
-   padding: same padding
-   pool size: 2, 2
-   dropout: 25%
-   epoch: 20
-   early stop patience: 2
-   output layer activation function: softmax
-   
-   accuracy: 0.9471
+ ### version 1  
+   image resolution: 64x64  
+   filter: 32  
+   kernel size: 3, 3  
+   padding: same padding  
+   pool size: 2, 2  
+   dropout: 25%  
+   epoch: 20  
+   early stop patience: 2  
+   output layer activation function: softmax  
+     
+   accuracy: 0.9471  
    
  ### version 2
   이미지 해상도를 128x128로 늘리고 kernel size 등의 파라미터도 두 배로 늘림.
-   image resolution: 128x128
-   filter: 32
-   kernel size: 6, 6
-   padding: same padding
-   pool size: 4, 4
-   dropout: 25%
-   epoch: 20
-   early stop patience: 2
-   output layer activation function: softmax
-   
-   accuracy: 0.9894
-   
+   image resolution: 128x128  
+   filter: 32  
+   kernel size: 6, 6  
+   padding: same padding  
+   pool size: 4, 4  
+   dropout: 25%  
+   epoch: 20  
+   early stop patience: 2  
+   output layer activation function: softmax  
+     
+   accuracy: 0.9894  
+     
  ### version 3
-  이미지 해상도를 256x256으로 한 차례 더 두 배.
-   image resolution: 256x256
-   filter: 32
-   kernel size: 12, 12
-   padding: same padding
-   pool size: 8, 8
-   dropout: 25%
-   epoch: 20
-   early stop patience: 2
-   output layer activation function: softmax
+  이미지 해상도를 256x256으로 한 차례 더 두 배.  
+   image resolution: 256x256  
+   filter: 32  
+   kernel size: 12, 12  
+   padding: same padding  
+   pool size: 8, 8  
+   dropout: 25%  
+   epoch: 20  
+   early stop patience: 2  
+   output layer activation function: softmax  
+     
+   accuracy: 0.9418  
    
-   accuracy: 0.9418
-   
- ### version 4
-  이미지 해상도를 128x128로 되돌리고 출력층 활성화 함수를 sigmoid 함수로 변경
-   image resolution: 128x128
-   filter: 32
-   kernel size: 6, 6
-   padding: same padding
-   pool size: 4, 4
-   dropout: 25%
-   epoch: 20
-   early stop patience: 2
-   output layer activation function: sigmoid
-   
-   accuracy: 0.9524
-   
+ ### version 4  
+  이미지 해상도를 128x128로 되돌리고 출력층 활성화 함수를 sigmoid 함수로 변경  
+   image resolution: 128x128  
+   filter: 32  
+   kernel size: 6, 6  
+   padding: same padding  
+   pool size: 4, 4  
+   dropout: 25%  
+   epoch: 20  
+   early stop patience: 2  
+   output layer activation function: sigmoid  
+     
+   accuracy: 0.9524  
+     
 version 2가 가장 높은 성능을 보여줌
