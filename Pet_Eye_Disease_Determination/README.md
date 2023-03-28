@@ -22,7 +22,7 @@
 url: https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=562
 결막염과 백내장 두 가지 질병에 대한 데이터셋이나, 컬러로 된 결막염 데이터셋만 활용하였다.
 
-## 4. model explanation
+## 4. Model explanation
  모델은 Keras의 CNN을 사용했다. 데이터셋은 2차원 컬러 이미지로서 단순 이진분류(병이 있는지 없는지)를 판단하기에는 가장 직관적이고 높은 정확도를 보일 것으로 판단했기 때문이다.
 
 ## 5. Hyperparameter Tuning
