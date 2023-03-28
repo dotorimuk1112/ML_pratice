@@ -6,8 +6,17 @@
  나아가, 육안으로 식별할 수 있는 다른 질병의 데이터셋을 확보하여 안구질환뿐만 아니라 피부질환 등에 대해서도 판별할 수 있을 것이다.  
  
  
-## 2. Environment
- Python Version: 3.9.13
+## 2. Environment & Prerequisite
+ Python Version: 3.9.13  
+ 
+ import numpy as np  
+ import pandas as pd  
+ import matplotlib.pyplot as plt  
+ from PIL import Image  
+ import os, glob  
+ from sklearn.model_selection import train_test_split  
+ from keras.preprocessing import image  
+ from tensorflow import keras  
  
 ## 3. Dataset
 url: https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=562
